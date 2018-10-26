@@ -5,8 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.9/dc.css"/>
+
+	<script type="text/javascript" src="https://rawgithub.com/NickQiZhu/dc.js/master/web/js/crossfilter.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="https://dc-js.github.io/dc.js/js/dc.js"></script>
     
 
 </head>
@@ -53,18 +57,31 @@
             <div class="col-md-6 number-box" id="current-gdp">17672.0 bln $</div>
         </div>
         
-        <div class="container-fluid" id="unemployment">
+        <div class="container-fluid light">
             <svg width="950" height="500"></svg>
         </div>
         
         <div class="container-fluid realgdp">
             <svg id="realgdp" width="950" height="500"></svg>
         </div>
+        
+        <div class="container-fluid light circle">
+        	<div class="col-lg-4 margined" id="first">
+        		<h4>Import Value in mlns of Dollars</h4>
+        	</div>
+        	<div class="col-lg-4 margined" id="second">
+        		<h4>Export Value in mlns of Dollars</h4>
+        	</div>
+        	<div class="col-lg-4 margined" id="third">
+        		<h4>Difference Value in mlns of Dollars</h4>
+        	</div>
+        </div>
     </div>
 
 	<footer></footer>
 	<script type="text/javascript" src="script/unemployment.js"></script>
 	<script type="text/javascript" src="script/realgdp.js"></script>
+	<script type="text/javascript" src="script/new.js"></script>
 	
 </body>
 </html>

@@ -6,6 +6,15 @@
     fill: orange;
         }
 
-#unemployment {
+.light {
     background-color: #D8D8D8;
+}
+
+.circle {
+    height: 500px;
+}
+
+.margined {
+    margin-top: 150px;
+    color: #4E5D6C;
 }
