@@ -41,7 +41,7 @@ var svg = d3.select("svg"),
          .call(d3.axisLeft(yScale).tickFormat(function(d){
              return d;
          })
-         .ticks(15))
+         .ticks(10))
          .append("text")
          .attr("transform", "rotate(-90)")
          .attr("y", 7)

@@ -18,3 +18,15 @@
     margin-top: 150px;
     color: #4E5D6C;
 }
+
+/*     MEDIA     */
+
+@media (max-width: 992px) {
+    .margined {
+        margin-top: 25px;
+    }
+    
+    .circle {
+        height: 800px;
+    }
+}

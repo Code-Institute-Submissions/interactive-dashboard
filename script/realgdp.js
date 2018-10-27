@@ -13,7 +13,7 @@ function realGdp() {
            .style('fill', 'white');
     
         var x = d3.scaleBand().range([0, width]).padding(0.5),
-            y = d3.scaleLinear().range([height, 100]);
+            y = d3.scaleLinear().range([height, 150]);
     
         var g = svg.append("g")
                 .attr("transform", "translate(" + 100 + "," + 100 + ")");
@@ -39,9 +39,11 @@ function realGdp() {
              .style('fill', 'white');;
     
             g.append("g")
-             .call(d3.axisLeft(y).tickFormat(function(d){
+             .call(d3.axisLeft(y)
+             .tickFormat(function(d){
                  return "$" + d;
-             }).ticks(20))
+             })
+             .ticks(10))
              .append("text")
              .attr("transform", "rotate(-90)")
              .attr("y", 5)
