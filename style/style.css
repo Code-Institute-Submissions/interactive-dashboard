@@ -18,7 +18,13 @@
     margin-top: 150px;
     color: #4E5D6C;
 }
-
+.compare {
+    margin-top: 50px;
+}
+div.svg-container {
+    margin-left: auto;
+    margin-right: auto;
+}
 /*     MEDIA     */
 
 @media (max-width: 992px) {
